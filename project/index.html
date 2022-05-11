@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather forecast</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <div class="upper-div">
+                    <form id="search-form">
+                        <input type="text" placeholder="Type a city.." class="city-search__input" id="search-input" />
+                        <button type="submit" class="search-button" id="search-button">
+                Search
+              </button>
+                    </form>
+                    <button class="search-button" id="curr-weather-button">
+              Current
+            </button>
+                </div>
+                <div class="info-div">
+                    <div class="text">
+                        <h2></h2>
+                        <p id="date"></p>
+                        <p id="description"></p>
+                    </div>
+                    <div class="current-weather">
+                        <div class="image-section">
+                            <img src="img/5729381_snow_snowing_winter_forecast_snowflake_icon.svg" alt="" class="image__weather" />
+                            <span class="current-temperature" id="curr-temp"></span
+                ><span class="temp"
+                  ><a href="#" class="celsius" id="cels">&deg;C|</a
+                  ><a href="#" class="farenheit" id="fahr">&deg;F</a>
+                </span>
+                        </div>
+                        <div class="info-section">
+                            <p>Humidity: <span id="humidity"></span>%</p>
+                            <p>Wind: <span id="wind-speed"></span> m/s</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="future-weather">
+                    <div class="day">
+                        <div class="week-day">Mon</div>
+                        <div class="day-image">
+                            <img src="img/5729382_cloud_raining_sun_weather_forecast_icon.svg" alt="" />
+                        </div>
+
+                        <div class="day-info">
+                            <img src="img/temperature-svgrepo-com.svg" alt="" class="image-temp" /><span class="future-temp">18</span>&deg;
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="week-day">Tue</div>
+                        <div class="day-image">
+                            <img src="img/5729387_cloudy_lightning_weather_cloud_forecast_icon.svg" alt="" />
+                        </div>
+
+                        <div class="day-info">
+                            <img src="img/temperature-svgrepo-com.svg" alt="" class="image-temp" /><span class="future-temp">15</span>&deg;
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="week-day">Wed</div>
+                        <div class="day-image">
+                            <img src="img/5729391_cloudy_weather_cloud_forecast_rain_icon.svg" alt="" />
+                        </div>
+
+                        <div class="day-info">
+                            <img src="img/temperature-svgrepo-com.svg" alt="" class="image-temp" /><span class="future-temp">20</span>&deg;
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="week-day">Thu</div>
+                        <div class="day-image">
+                            <img src="img/5729383_cloud_raining_weather_forecast_rain_icon.svg" alt="" />
+                        </div>
+
+                        <div class="day-info">
+                            <img src="img/temperature-svgrepo-com.svg" alt="" class="image-temp" /><span class="future-temp">10</span>&deg;
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="week-day">Fri</div>
+                        <div class="day-image">
+                            <img src="img/5729390_drip_cloud_drop_forecast_weather_icon.svg" alt="" />
+                        </div>
+
+                        <div class="day-info">
+                            <img src="img/temperature-svgrepo-com.svg" alt="" class="image-temp" /><span class="future-temp">17</span>&deg;
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="week-day">Sat</div>
+                        <div class="day-image">
+                            <img src="img/5729378_sun_sunny_weather_climate_forecast_icon.svg" alt="" />
+                        </div>
+
+                        <div class="day-info">
+                            <img src="img/temperature-svgrepo-com.svg" alt="" class="image-temp" /><span class="future-temp">23</span>&deg;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Coded by Nataliia Chala</footer>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

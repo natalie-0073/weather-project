@@ -1,0 +1,124 @@
+html {
+    background: url(../img/pexels-quintin-gellar-313782.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin: 80px auto;
+    width: 35vw;
+    height: fit-content;
+    padding: 10px;
+}
+
+.content {
+    height: 100%;
+    overflow: hidden;
+}
+
+.upper-div {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.city-search__input {
+    width: 20vw;
+    padding: 9px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.image__weather {
+    max-width: 100px;
+}
+
+.current-temperature {
+    font-size: 4rem;
+}
+
+.info-section p {
+    padding: 3px;
+    margin: 0;
+}
+
+.info-section {
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.temp {
+    position: relative;
+    top: -20px;
+}
+
+.search-button {
+    border-radius: 5px;
+    padding: 8px 15px;
+    transition: all 0.2s;
+    background-color: #68362b;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search-button:hover {
+    color: #68362b;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    font-size: 1rem;
+    text-decoration: underline;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+}
+
+.future-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+}
+
+.image-temp {
+    filter: invert(100%) sepia(0%) saturate(290%) hue-rotate(170deg) brightness(121%) contrast(100%);
+}
+
+.day {
+    font-weight: 300;
+    text-align: center;
+}
+
+.day-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
